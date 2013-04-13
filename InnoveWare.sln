@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InnoveWare", "InnoveWare\InnoveWare.csproj", "{B78AC384-7DB3-49F9-AE2E-8C6513D66AED}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "InnoveWareWeb", "InnoveWareWeb\", "{D7D9F95D-A9A5-47C0-9D4D-B6919FDA90A1}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFramework = "3.5"
+		Debug.AspNetCompiler.VirtualPath = "/InnoveWareWeb"
+		Debug.AspNetCompiler.PhysicalPath = "InnoveWareWeb\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\InnoveWareWeb\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/InnoveWareWeb"
+		Release.AspNetCompiler.PhysicalPath = "InnoveWareWeb\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\InnoveWareWeb\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "4490"
+		DefaultWebSiteLanguage = "Visual C#"
+		ProjOutputReferences = "{B78AC384-7DB3-49F9-AE2E-8C6513D66AED}|ClientBin|false;"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Release|.NET = Release|.NET
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B78AC384-7DB3-49F9-AE2E-8C6513D66AED}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{B78AC384-7DB3-49F9-AE2E-8C6513D66AED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B78AC384-7DB3-49F9-AE2E-8C6513D66AED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B78AC384-7DB3-49F9-AE2E-8C6513D66AED}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{B78AC384-7DB3-49F9-AE2E-8C6513D66AED}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{B78AC384-7DB3-49F9-AE2E-8C6513D66AED}.Release|.NET.ActiveCfg = Release|Any CPU
+		{B78AC384-7DB3-49F9-AE2E-8C6513D66AED}.Release|.NET.Build.0 = Release|Any CPU
+		{B78AC384-7DB3-49F9-AE2E-8C6513D66AED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B78AC384-7DB3-49F9-AE2E-8C6513D66AED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B78AC384-7DB3-49F9-AE2E-8C6513D66AED}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{B78AC384-7DB3-49F9-AE2E-8C6513D66AED}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{D7D9F95D-A9A5-47C0-9D4D-B6919FDA90A1}.Debug|.NET.ActiveCfg = Debug|.NET
+		{D7D9F95D-A9A5-47C0-9D4D-B6919FDA90A1}.Debug|.NET.Build.0 = Debug|.NET
+		{D7D9F95D-A9A5-47C0-9D4D-B6919FDA90A1}.Debug|Any CPU.ActiveCfg = Debug|.NET
+		{D7D9F95D-A9A5-47C0-9D4D-B6919FDA90A1}.Debug|Mixed Platforms.ActiveCfg = Debug|.NET
+		{D7D9F95D-A9A5-47C0-9D4D-B6919FDA90A1}.Debug|Mixed Platforms.Build.0 = Debug|.NET
+		{D7D9F95D-A9A5-47C0-9D4D-B6919FDA90A1}.Release|.NET.ActiveCfg = Debug|.NET
+		{D7D9F95D-A9A5-47C0-9D4D-B6919FDA90A1}.Release|.NET.Build.0 = Debug|.NET
+		{D7D9F95D-A9A5-47C0-9D4D-B6919FDA90A1}.Release|Any CPU.ActiveCfg = Debug|.NET
+		{D7D9F95D-A9A5-47C0-9D4D-B6919FDA90A1}.Release|Mixed Platforms.ActiveCfg = Debug|.NET
+		{D7D9F95D-A9A5-47C0-9D4D-B6919FDA90A1}.Release|Mixed Platforms.Build.0 = Debug|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

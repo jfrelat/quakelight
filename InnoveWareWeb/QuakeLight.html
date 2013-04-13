@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<!-- saved from url=(0014)about:internet -->
+<head>
+    <title>QuakeLight (Silverlight port of the id Software Quake game)</title>
+
+    <style type="text/css">
+    html, body {
+	    height: 100%;
+	    overflow: auto;
+	    background-color: #000;
+    }
+    #silverlightControlHost {
+	    height: 100%;
+	    text-align: center;
+    }
+    </style>
+    
+    <script type="text/javascript">
+        function onSilverlightError(sender, args) {
+        
+            var appSource = "";
+            if (sender != null && sender != 0) {
+                appSource = sender.getHost().Source;
+            } 
+            var errorType = args.ErrorType;
+            var iErrorCode = args.ErrorCode;
+            
+            var errMsg = "Unhandled Error in Silverlight 2 Application " +  appSource + "\n" ;
+
+            errMsg += "Code: "+ iErrorCode + "    \n";
+            errMsg += "Category: " + errorType + "       \n";
+            errMsg += "Message: " + args.ErrorMessage + "     \n";
+
+            if (errorType == "ParserError")
+            {
+                errMsg += "File: " + args.xamlFile + "     \n";
+                errMsg += "Line: " + args.lineNumber + "     \n";
+                errMsg += "Position: " + args.charPosition + "     \n";
+            }
+            else if (errorType == "RuntimeError")
+            {           
+                if (args.lineNumber != 0)
+                {
+                    errMsg += "Line: " + args.lineNumber + "     \n";
+                    errMsg += "Position: " +  args.charPosition + "     \n";
+                }
+                errMsg += "MethodName: " + args.methodName + "     \n";
+            }
+
+            throw new Error(errMsg);
+        }
+
+        function onLoadHandler() {
+
+            agControl = document.getElementById('SilverlightControl');
+            agControl.focus();
+        }
+    </script>
+</head>
+
+<body onload="javascript:onLoadHandler()" onkeydown="return false;">
+
+    <div style="margin: 0; width: 100%; height: 100%">
+        
+        <!-- Runtime errors from Silverlight will be displayed here.
+	    This will contain debugging information and should be removed or hidden when debugging is completed -->
+	    <div id='errorLocation' style="font-size: small;color: Gray;"></div>
+
+        <div id="silverlightControlHost" style="margin: auto; width: 640px; height: 480px">
+		    <object id="silverlightControl" data="data:application/x-silverlight," type="application/x-silverlight-2" width="100%" height="100%">
+			    <param name="source" value="ClientBin/InnoveWare.xap"/>
+			    <param name="onerror" value="onSilverlightError" />
+			    <param name="background" value="#FF000000" />
+			    <param name="minRuntimeVersion" value="3.0.40264.0" />
+			    <param name="autoUpgrade" value="true" />
+			    <param name="maxframerate" value="1000" />
+			    <param name="isWindowLess" value="false" />
+			    <param name="EnableGPUAcceleration" value="false" />
+                <param name="EnableCacheVisualization" value="false" />
+                <param name="EnableFrameRateCounter" value="false" />
+    			
+			    <a href="http://go.microsoft.com/fwlink/?LinkID=124807" style="text-decoration: none;">
+     			    <img src="http://go.microsoft.com/fwlink/?LinkId=108181" alt="Get Microsoft Silverlight" style="border-style: none"/>
+			    </a>
+		    </object>
+		</div>
+		<p align="center">
+		<font color="white">QuakeLight, a Microsoft Silverlight port of Quake</font><br>
+		<font color="white">Silverlight 3 Demo</font><br>
+		<font color="gray">Click for fullscreen. Press Enter or Esc for menu.</font>
+		</p>
+		<p align="center"><a href="http://www.silverlight.net"><img src="silverlight.png" valign=top border=0></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.idsoftware.com"><img src="id.jpg" valign=top border=0></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.innoveware.com"><img src="logo.jpg" valign=top border=0></a></p>
+	
+        <p align="center">
+        <script type="text/javascript"><!--
+            google_ad_client = "pub-7222355600441924";
+            google_ad_width = 728;
+            google_ad_height = 90;
+            google_ad_format = "728x90_as";
+            google_ad_type = "text";
+            google_ad_channel = "7515297103";
+            google_color_border = "000000";
+            google_color_bg = "000000";
+            google_color_link = "DD0000";
+            google_color_url = "FFFFFF";
+            google_color_text = "FFFFFF";
+        //--></script>
+        <script type="text/javascript"
+          src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+        </script>
+        </p>
+	</div>
+</body>
+</html>

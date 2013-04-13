@@ -1,0 +1,181 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B78AC384-7DB3-49F9-AE2E-8C6513D66AED}</ProjectGuid>
+    <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>InnoveWare</RootNamespace>
+    <AssemblyName>InnoveWare</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>InnoveWare.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>InnoveWare.App</SilverlightAppEntry>
+    <TestPageFileName>TestPage.html</TestPageFileName>
+    <CreateTestPage>true</CreateTestPage>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>false</ThrowErrorsInValidation>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows" />
+    <Reference Include="mscorlib" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Windows.Browser" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="quake\chase.cs" />
+    <Compile Include="quake\cl_input.cs" />
+    <Compile Include="quake\crc.cs" />
+    <Compile Include="quake\d_polyse.cs" />
+    <Compile Include="quake\d_scan.cs" />
+    <Compile Include="quake\d_sky.cs" />
+    <Compile Include="quake\d_sprite.cs" />
+    <Compile Include="quake\d_surf.cs" />
+    <Compile Include="quake\modelgen.cs" />
+    <Compile Include="quake\net_loop.cs" />
+    <Compile Include="quake\net_none.cs" />
+    <Compile Include="quake\progdefs.cs" />
+    <Compile Include="quake\pr_cmds.cs" />
+    <Compile Include="quake\pr_comp.cs" />
+    <Compile Include="quake\pr_edict.cs" />
+    <Compile Include="quake\pr_exec.cs" />
+    <Compile Include="quake\r_aclip.cs" />
+    <Compile Include="quake\r_alias.cs" />
+    <Compile Include="quake\r_bsp.cs" />
+    <Compile Include="quake\r_draw.cs" />
+    <Compile Include="quake\r_edge.cs" />
+    <Compile Include="quake\r_efrag.cs" />
+    <Compile Include="quake\r_light.cs" />
+    <Compile Include="quake\r_sky.cs" />
+    <Compile Include="quake\r_sprite.cs" />
+    <Compile Include="quake\r_surf.cs" />
+    <Compile Include="quake\r_vars.cs" />
+    <Compile Include="quake\snd_dma.cs" />
+    <Compile Include="quake\snd_mem.cs" />
+    <Compile Include="quake\sound.cs" />
+    <Compile Include="quake\sv_user.cs" />
+    <Compile Include="Helpers\Helper.cs" />
+    <Compile Include="Page.xaml.cs">
+      <DependentUpon>Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="quake\bspfile.cs" />
+    <Compile Include="quake\client.cs" />
+    <Compile Include="quake\cl_demo.cs" />
+    <Compile Include="quake\cl_main.cs" />
+    <Compile Include="quake\cl_parse.cs" />
+    <Compile Include="quake\cl_tent.cs" />
+    <Compile Include="quake\cmd.cs" />
+    <Compile Include="quake\common.cs" />
+    <Compile Include="quake\console.cs" />
+    <Compile Include="quake\cvar.cs" />
+    <Compile Include="quake\draw.cs" />
+    <Compile Include="quake\d_edge.cs" />
+    <Compile Include="quake\d_iface.cs" />
+    <Compile Include="quake\d_init.cs" />
+    <Compile Include="quake\d_local.cs" />
+    <Compile Include="quake\d_modech.cs" />
+    <Compile Include="quake\d_part.cs" />
+    <Compile Include="quake\d_vars.cs" />
+    <Compile Include="quake\host.cs" />
+    <Compile Include="quake\host_cmd.cs" />
+    <Compile Include="quake\keys.cs" />
+    <Compile Include="quake\mathlib.cs" />
+    <Compile Include="quake\menu.cs" />
+    <Compile Include="quake\model.cs" />
+    <Compile Include="quake\net.cs" />
+    <Compile Include="quake\net_main.cs" />
+    <Compile Include="quake\progs.cs" />
+    <Compile Include="quake\protocol.cs" />
+    <Compile Include="quake\quakedef.cs" />
+    <Compile Include="quake\render.cs" />
+    <Compile Include="quake\r_local.cs" />
+    <Compile Include="quake\r_main.cs" />
+    <Compile Include="quake\r_misc.cs" />
+    <Compile Include="quake\r_part.cs" />
+    <Compile Include="quake\r_shared.cs" />
+    <Compile Include="quake\sbar.cs" />
+    <Compile Include="quake\screen.cs" />
+    <Compile Include="quake\server.cs" />
+    <Compile Include="quake\spritegn.cs" />
+    <Compile Include="quake\sv_main.cs" />
+    <Compile Include="quake\sv_phys.cs" />
+    <Compile Include="quake\sys_linux.cs" />
+    <Compile Include="quake\vid.cs" />
+    <Compile Include="quake\view.cs" />
+    <Compile Include="quake\wad.cs" />
+    <Compile Include="quake\world.cs" />
+    <Compile Include="SL2 WriteableBitmap\BitmapData.cs" />
+    <Compile Include="SL2 WriteableBitmap\PngWrapper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="Page.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="id1\pak0.pak" />
+    <None Include="Properties\AppManifest.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight\v3.0\Microsoft.Silverlight.CSharp.targets" Condition="" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{A1591282-1198-4647-A2B1-27E5FF5F6F3B}">
+        <SilverlightProjectProperties />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

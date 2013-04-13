@@ -1,0 +1,14 @@
+﻿<UserControl x:Class="InnoveWare.Page"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    Width="Auto" Height="Auto" Background="Black">
+    <ContentControl IsTabStop="True">
+        <Canvas x:Name="parentCanvas" Loaded="Page_Loaded" Width="640" Height="480" Background="Black">
+          <Canvas.Resources>
+            <Storyboard x:Name="fps_timer"  Duration="00:00:1" />
+          </Canvas.Resources>
+          <TextBlock x:Name="fps" Canvas.Left="10" Canvas.Top="10" Height="40" Text="   fps" Canvas.ZIndex="10000" />
+          <Image Width="320" Height="240" x:Name="image" Canvas.Left="0" Canvas.Top="0" />
+        </Canvas>
+    </ContentControl>
+</UserControl>
